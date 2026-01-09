@@ -1,0 +1,20 @@
+Menuo: 3 Mokėjimo suma: 16.67 Kredito dalis: 0.0 Procentų dalis: 16.67 Likusi dalis: 9932.66
+
+Menuo: 4 Mokėjimo suma: 16.67 Kredito dalis: 0.0 Procentų dalis: 16.67 Likusi dalis: 9932.66
+
+Menuo: 5 Mokėjimo suma: 16.67 Kredito dalis: 0.0 Procentų dalis: 16.67 Likusi dalis: 9932.66
+
+Menuo: 6 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9898.99
+
+Menuo: 7 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9865.32
+
+Menuo: 8 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9831.65
+
+Menuo: 9 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9797.98
+
+Menuo: 10 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9764.311
+
+Menuo: 11 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9730.641
+
+Menuo: 12 Mokėjimo suma: 50.339996 Kredito dalis: 33.67 Procentų dalis: 16.67 Likusi dalis: 9696.971
+

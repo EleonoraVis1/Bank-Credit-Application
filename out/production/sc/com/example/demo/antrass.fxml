@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AntrasController">
+   <children>
+      <TextField fx:id="txt1" layoutX="531.0" layoutY="95.0" />
+      <TextField fx:id="txt2" layoutX="531.0" layoutY="203.0" />
+      <TextField fx:id="txt3" layoutX="531.0" layoutY="285.0" />
+      <Label fx:id="lbl1" layoutX="67.0" layoutY="55.0" text="Įveskite paskolos sumą:" />
+      <Label fx:id="lbl2" layoutX="531.0" layoutY="161.0" text="Einamoji sąskaita" />
+      <Label fx:id="lbl3" layoutX="531.0" layoutY="252.0" text="Taupomoji sąskaita" />
+      <Button fx:id="btn1" layoutX="681.0" layoutY="95.0" mnemonicParsing="false" onAction="#mgtClicked" text="Įvesti" />
+      <Label fx:id="name1" layoutX="297.0" layoutY="14.0" text="Būsto skaičiuoklės programa" />
+      <Label fx:id="lbl4" layoutX="67.0" layoutY="143.0" text="Įveskite paskolos terminą:" />
+      <TextField fx:id="pask" layoutX="68.0" layoutY="95.0" />
+      <TextField fx:id="metai" layoutX="68.0" layoutY="180.0" prefHeight="26.0" prefWidth="36.0" />
+      <Label fx:id="metaiL" layoutX="112.0" layoutY="185.0" text="metai" />
+      <TextField fx:id="men" layoutX="147.0" layoutY="180.0" prefHeight="26.0" prefWidth="36.0" />
+      <Label fx:id="menL" layoutX="189.0" layoutY="185.0" text="men." />
+      <Label fx:id="grafL" layoutX="67.0" layoutY="228.0" text="Paskolos grąžinimo grafikas:" />
+      <RadioButton fx:id="anuiB" layoutX="69.0" layoutY="252.0" mnemonicParsing="false" onAction="#anChosen" text="Anuitetas" />
+      <RadioButton fx:id="liniB" layoutX="69.0" layoutY="280.0" mnemonicParsing="false" onAction="#linChosen" text="Linijinis" />
+      <Label fx:id="procL" layoutX="67.0" layoutY="316.0" text="Įveskite metinį procentą:" />
+      <TextField fx:id="procentai" layoutX="67.0" layoutY="346.0" prefHeight="26.0" prefWidth="30.0" />
+      <Label fx:id="procL2" layoutX="107.0" layoutY="350.0" text="\%" />
+      <Label fx:id="o" layoutX="531.0" layoutY="55.0" text="Papildyti sąskaitą:" />
+      <Label fx:id="atidL" layoutX="67.0" layoutY="392.0" text="Atidėjimas:" />
+      <TextField fx:id="atidM" layoutX="67.0" layoutY="420.0" prefHeight="26.0" prefWidth="30.0" />
+      <Label fx:id="atidL2" layoutX="103.0" layoutY="425.0" text="men.   Nuo" />
+      <TextField fx:id="atidN" layoutX="165.0" layoutY="421.0" prefHeight="26.0" prefWidth="30.0" />
+      <Label fx:id="atidL3" layoutX="204.0" layoutY="425.0" text="men." />
+      <Button fx:id="atask" layoutX="72.0" layoutY="644.0" mnemonicParsing="false" onAction="#gautAtaskaita" text="Gauti ataskaitą" />
+      <Button fx:id="gen" layoutX="277.0" layoutY="421.0" mnemonicParsing="false" onAction="#generate" text="Sugeneruoti" />
+      <Button fx:id="sumok" layoutX="531.0" layoutY="338.0" mnemonicParsing="false" onAction="#sumoketi" text="Atlikti mokėjimą" />
+      <TextField fx:id="lentM" layoutX="67.0" layoutY="499.0" prefHeight="26.0" prefWidth="30.0" />
+      <TextField fx:id="lentB" layoutX="98.0" layoutY="500.0" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="lentS" layoutX="170.0" layoutY="500.0" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="lentP" layoutX="243.0" layoutY="500.0" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="filtr" layoutX="67.0" layoutY="603.0" prefHeight="26.0" prefWidth="30.0" />
+      <Label fx:id="llent" layoutX="68.0" layoutY="457.0" text="Mokėjimas šį mėnesį:" />
+      <Label fx:id="lmenl" layoutX="68.0" layoutY="475.0" text="men." />
+      <Label fx:id="lbendr" layoutX="111.0" layoutY="475.0" text="Bendra" />
+      <Label fx:id="lkred" layoutX="177.0" layoutY="475.0" text="Kreditas" />
+      <Label fx:id="lproc" layoutX="247.0" layoutY="475.0" text="Procentai" />
+      <Label fx:id="lfiltr" layoutX="67.0" layoutY="578.0" text="Rodyti nuo:" />
+      <Label fx:id="filtrmen" layoutX="103.0" layoutY="608.0" text="men." />
+      <Label fx:id="lkd" layoutX="330.0" layoutY="475.0" text="Likusi kredito dalis" />
+      <TextField fx:id="lkdtext" layoutX="315.0" layoutY="500.0" prefHeight="26.0" prefWidth="124.0" />
+      <BarChart fx:id="j" layoutX="450.0" layoutY="382.0" prefHeight="292.0" prefWidth="334.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Mokėjimas" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label fx:id="justL" layoutX="67.0" layoutY="528.0" text="Sumokėta procentų:" />
+      <TextField fx:id="kiekProc" layoutX="68.0" layoutY="546.0" prefHeight="26.0" prefWidth="102.0" />
+   </children>
+</AnchorPane>
